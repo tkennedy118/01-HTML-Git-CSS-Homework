@@ -4,14 +4,28 @@
     margin: 0;
 }
 
+/* selectors related to html tags */
 body {
     background-color: #d9dcd6;
+    font-size: 6px
 }
 
 p {
-    font-size: 16px;
+    font-size: 3em;
 }
 
+/* selectors used throughout but not specific to any one section */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* selector classes for header information */
 .header-info {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,7 +36,7 @@ p {
 
 .header-title {
     display: inline-block;
-    font-size: 48px;
+    font-size: 8em;
 }
 
 .header-nav {
@@ -30,7 +44,7 @@ p {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 3em;
 }
 
 .header-nav-list {
@@ -42,34 +56,55 @@ p {
     margin-left: 25px;
 }
 
+/* selector id for header image */
+#header-img {
+    height: auto;              
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* selector class navigation link in header section */
 .nav-link {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* selector class for title in header section */
 .title-darker {
     color: #d9dcd6;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/* selector classes for main content of the site */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+.content-item {                 
+    margin-bottom: 20px;
+    padding: 50px;
+    min-height: 300px;  /* change height to min-height for scalability */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content-img {                  
+    max-height: 200px;
+}
+
+.content-heading {              
+    margin-bottom: 20px;
+    font-size: 5em;
+}
+
+/* selector classes for sidebar */
 .benefits {
     margin-right: 20px;
-    padding: 20px 20px 0 20px;  /* remove padding from bottom so content bottom lines with sidebar bottom */
+    padding: 20px 20px 0 20px;  
     clear: both;
     float: right;
     width: 20%;
@@ -78,40 +113,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefits-section {             /* consolidate benefit-lead, benefit-brand, and benefit-cost into one class */
+.benefits-section {             
     margin-bottom: 32px;
     color: #fff;
 }
 
-.benefits-heading {             /* consolidate benefit headings into one class */
+.benefits-heading {             
     margin-bottom: 10px;
     text-align: center;
+    font-size: 3em;
 }
 
-.benefits-img {                 /* consolidate benefit images into one class */
+.benefits-img {                 
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.content-item {                  /* consolidate content items into one class */
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.content-img {                   /* consolidate content item images into one class */
-    max-height: 200px;
-}
-
-.content-heading {               /* consolidate content headings into one class */
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* selector class for footer section */
 .footer {
     padding: 30px;
     clear: both;
@@ -120,13 +139,5 @@ p {
 }
 
 .footer-title {
-    font-size: 20px;
-}
-
-#header-img {
-    height: auto;               /* give height: auto for better sizing */
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
+    font-size: 3em;
 }
