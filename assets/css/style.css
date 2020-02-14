@@ -8,24 +8,24 @@ body {
     background-color: #d9dcd6;
 }
 
-header {
+p {
+    font-size: 16px;
+}
+
+.header-info {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    overflow: auto;
+    overflow: auto;             /* add overflow for dynamic sizing */
 }
 
-header h1 {
+.header-title {
     display: inline-block;
     font-size: 48px;
 }
 
-.title-darker {
-    color: #d9dcd6;
-}
-
-header nav {
+.header-nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,30 +33,22 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+.header-nav-list {
     list-style-type: none;
 }
 
-header nav ul li {
+.header-nav-list-item {
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
+.nav-link {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
-#header-img {
-    height: auto;
-    width: 100%;
-    margin: 0 0 25px 0;
-    background-size: cover;
-    background-position: top;
+.title-darker {
+    color: #d9dcd6;
 }
 
 .float-left {
@@ -77,7 +69,7 @@ p {
 
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;  /* remove padding from bottom so content bottom lines with sidebar bottom */
     clear: both;
     float: right;
     width: 20%;
@@ -86,23 +78,23 @@ p {
     background-color: #2589bd;
 }
 
-.benefits-section {
+.benefits-section {             /* consolidate benefit-lead, benefit-brand, and benefit-cost into one class */
     margin-bottom: 32px;
     color: #fff;
 }
 
-.benefits-heading {
+.benefits-heading {             /* consolidate benefit headings into one class */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefits-img {
+.benefits-img {                 /* consolidate benefit images into one class */
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.nav-item {
+.content-item {                  /* consolidate content items into one class */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -111,12 +103,11 @@ p {
     color: #ffffff;
 }
 
-.nav-img {
+.content-img {                   /* consolidate content item images into one class */
     max-height: 200px;
 }
 
-/* combined into one class */
-.nav-heading {
+.content-heading {               /* consolidate content headings into one class */
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -128,6 +119,14 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+.footer-title {
     font-size: 20px;
+}
+
+#header-img {
+    height: auto;               /* give height: auto for better sizing */
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
 }
